@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: "gilory";
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 html,body{
@@ -13,9 +13,10 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: black;
+    overflow: hidden;
 }
 #nav{
-    height: 80px;
+    height: 100px;
     width: 100%;
     /* background-color: chocolate; */
     display: flex;
@@ -50,4 +51,112 @@ html,body{
     height: 2px;
     width: 60px;
     background-color: red;
+}
+#content{
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: darkcyan; */
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 36%;
+    /* background-color: coral; */
+    padding: 130px 90px;
+   
+}
+#center{
+    height: 100%;
+    width: 26%;
+    /* background-color: darkorchid; */
+    padding-top:50px;
+    padding: 0% 1.5%;
+    position: relative;
+}
+#right{
+    height: 100%;
+    width: 36%;
+    padding: 400px 100px;
+    /* background-color: rgb(172, 144, 134); */
+}
+#left h1{
+    font-size: 65px;
+    line-height: 75px;
+    font-weight: 600;
+    margin-bottom:50px ;
+}
+#left h1 span{
+    color: red;
+}
+#left p{
+    font-size: 15px;
+    width: 60%;
+    margin-bottom:50px;
+}
+#left button{
+    background-color: red;
+    padding: 18px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    display: flex;
+    align-items: centre;
+    font-weight: 700;
+}
+#left i{
+    margin-left: 10px;
+    position: absolute;
+    left:15%;
+    top: 65%;
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+}
+#centre-bg{
+    height: 90%;
+    width: 100%;
+    background-color: aquamarine;
+    background-image: url(https://i.pinimg.com/originals/97/b7/2a/97b72ae04d123f10d2e0c13c8b2fd07a.jpg);
+    background-size: 500%;
+    background-position: 20% 40%;
+    filter: blur(3px);
+    border-top-right-radius: 1000px;
+    border-top-left-radius: 1000px;
+}
+#centre-bottle>img{
+    position: absolute;
+    top: -28%;
+    left: -19%;
+    height: 1125px;
+}
+#right-elem{
+    /* background-color: red; */
+    width: 400px;
+}
+#elem1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    /* background-color: cornflowerblue; */
+    border-bottom: 1px solid white;
+    opacity: 0.6;
+}
+#elem1 h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+#elem1 i{
+    font-size: 24px;
+}
+#elem2{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+#elem2 p{
+    font-size: 12px;
+    width: 300px;
+    margin-top: 15px;
+    opacity: 0.6;
 }
